@@ -170,8 +170,8 @@ section{
 }
 .profile-pic{
     width: 300px;
-    animation-delay: 0;
-    animation-duration: 60s;
+    /* animation-delay: 2s; */
+    animation-duration: 20s;
     animation-iteration-count: infinite;
     height: 300px;
 }
@@ -216,6 +216,12 @@ section{
 .icon{
     cursor: pointer;
     height: 2rem;
+}
+
+.set_animation{
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 /* --------------------buttons */

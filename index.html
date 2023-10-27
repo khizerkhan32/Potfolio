@@ -8,6 +8,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Web</title>
     <link rel="stylesheet" href="style.css">
@@ -50,7 +51,7 @@
         <div class="section_pic-container">
             <img src="../assects/pro4.svg" alt="profile-pic" class="profile-pic animate__animated animate__rotateIn">
         </div>
-        <div class="section___text">
+        <div class="section___text" data-aos="zoom-out-left">
             <p class="section___text__p1">Hello, I'm</p>
             <h1>Joe Doe</h1>
             <p class="section___text__p2">Frontend Developer</p>
@@ -72,16 +73,16 @@
         </div>
     </section>
 
-    <section id="about">
+    <section id="about" data-aos="fade-up" data-aos-duration="3000">
         <p class="section___text__p1">Get know To More</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
-            <div class="section_pic-container">
-                <img src="./assects/about1.jpg" alt="profile-pic" class="about-pic">
+            <div class="section_pic-container" data-aos="fade-up-right">
+                <img src="./assects/about1.jpg" alt="profile-pic" class="about-pic ">
             </div>
-            <div class="about-detail-conatiner">
+            <div class="about-detail-conatiner" data-aos="fade-up-left">
                 <div class="about-containers">
-                    <div class="detail-container">
+                    <div class="detail-container ">
                         <img src="./assects/experience.png" alt="experience icon" class="icon">
                         <h3>Experience</h3>
                         <p>2+ years<br /> Frontend Development</p>
@@ -101,16 +102,19 @@
             </div>
         </div>
         <div>
-            <img src="./assects/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href=`./experience`">
+            <img src="./assects/arrow.png" alt="Arrow icon"
+                class="icon arrow animate__animated animate__slideInDown set_animation"
+                onclick="location.href=`./experience`">
         </div>
     </section>
 
-    <section id="experience">
+    <section id="experience" data-aos="zoom-in-up">
         <p class="section___text__p1">Explore My</p>
         <h1 class="title">Skills</h1>
         <div class="experince-detail-container">
             <div class="about-containers">
-                <div class="detail-container">
+                <div class="detail-container" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                     <h2 class="experince-sub-title"> Frontend Development</h2>
                     <div class="artile-container">
                         <article>
@@ -164,7 +168,7 @@
                     </div>
 
                 </div>
-                <div class="detail-container">
+                <div class="detail-container" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <h2 class="experince-sub-title"> Backend Development</h2>
                     <div class="artile-container">
                         <article>
@@ -221,16 +225,18 @@
                 </div>
             </div>
         </div>
-        <img src="./assects/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href=`./experience`">
+        <img src="./assects/arrow.png" alt="Arrow icon"
+            class="icon arrow animate__animated animate__slideInDown set_animation"
+            onclick="location.href=`./experience`">
 
     </section>
 
-    <section id="projects">
+    <section id="projects" data-aos="fade-up" data-aos-duration="3000">
         <p class="section___text__p1"> Browse My Recent</p>
         <h1 class="title">Projects</h1>
         <div class="experince-detail-container">
             <div class="about-containers">
-                <div class="detail-container color-container">
+                <div class="detail-container color-container" data-aos="fade-up" data-aos-anchor-placement="top-center">
                     <div class="artile-container">
                         <img src="./assects/project-1.png" alt="project-1" class="project-img">
 
@@ -244,7 +250,7 @@
                     </div>
 
                 </div>
-                <div class="detail-container color-container">
+                <div class="detail-container color-container" data-aos="fade-up" data-aos-anchor-placement="top-center">
                     <div class="artile-container">
                         <img src="./assects/project-2.png" alt="project-1" class="project-img">
 
@@ -258,7 +264,7 @@
                     </div>
 
                 </div>
-                <div class="detail-container color-container">
+                <div class="detail-container color-container" data-aos="fade-up" data-aos-anchor-placement="top-center">
                     <div class="artile-container">
                         <img src="./assects/project-3.png" alt="project-1" class="project-img">
 
@@ -274,11 +280,12 @@
                 </div>
             </div>
         </div>
-        <img src="./assects/arrow.png" alt="Arrow icon" class="icon arrow proj-arrow-set"
+        <img src="./assects/arrow.png" alt="Arrow icon"
+            class="icon arrow proj-arrow-set animate__animated animate__slideInDown set_animation"
             onclick="location.href=`./experience`">
     </section>
 
-    <section id="content">
+    <section id="content" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
         <p class="section___text__p1"> Get in Touch</p>
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
@@ -294,7 +301,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer data-aos="zoom-out-down">
         <nav>
             <div class="nav-links-conatiner">
                 <ul class="nav-links">
@@ -310,6 +317,11 @@
 
     </footer>
     <script src="script.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
