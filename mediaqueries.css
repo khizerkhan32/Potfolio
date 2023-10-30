@@ -65,6 +65,13 @@
     #projects {
         margin-bottom: 0;
     }
+
+    .logo-web-img{
+        width: 316px;
+        height: 130px;
+        top: 6px;
+        left: -60px;
+    }
 }
 
 
@@ -139,8 +146,9 @@
 
 @media screen and (max-width: 600px) {
     .logo-web-img{
-        width: 260px;
-        height: 160px;
+        width: 250px;
+        height: 134px;
+        LEFT: -52PX;
     }
     #profile,
     .section-container{
@@ -188,7 +196,7 @@
     }
     .section_pic-container{
         width: auto;
-        height: 44vh;
+        height: 66vh;
         justify-content: center;
     }
     .section___text__p2{
@@ -199,5 +207,8 @@
     }
     .text-container{
         text-align: justify;
+    }
+    #about{
+        margin-top: 6rem;
     }
 }

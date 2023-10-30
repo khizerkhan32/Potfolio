@@ -31,10 +31,10 @@ nav,
     display: flex;
 }
 .logo-web-img{
-    width: 342px;
-    height: 154px;
+    width: 316px;
+    height: 130px;
     position: relative;
-    top: 13px;
+    top: 6px;
     left: 40px;
     z-index: -11;
 }
